@@ -1,0 +1,4 @@
+  GNU nano 6.2                                           robots.txt                                                     User-agent: *
+Disallow:
+Disallow: /cgi-bin/
+Sitemap: https://warpan.in/sitemap.xml

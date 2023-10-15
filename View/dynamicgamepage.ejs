@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/GamePage.css">
+</head>
+<body>
+    <% for(let game of games){ %>
+        <% if (game) { %>
+          <div class="game-container" data-aos="zoom-in">
+            <div class="game-container1">
+              <div class="game-img">
+                <img src=<%= game.img %> alt="">
+              </div>
+             
+            </div>
+            <div class="game-small">
+              <img src=<%= game.mini_gameCardImg %> alt="">
+            </div>
+            <div class="title"><%= game.title %></div>
+            <div class="catagory">FPG PlatFormer Adventure</div>
+            <span class="mini-discription"> <p><%= game.mini_discription %> </p><li><a href="#"></a>more...</li> </span>
+            <button class="view-button" onclick="window.location.href='/<%= game._id %>'">View</button>
+          </div>
+      <% } %>
+      <% } %>
+   
+</body>
+</html>

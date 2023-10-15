@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warpan Games</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Permanent+Marker&family=Roboto:wght@300&family=Tilt+Prism&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+    </head>
+<body>
+  <header class="header">
+       
+    <div class="logo">
+        <img src="/logoWarpanpng.png" alt="error">
+    </div>
+    <input type="checkbox" id="menuBar">
+    <label for="menuBar">≡</label>
+  <nav class="nav">
+    <ul class="NavLink">
+        <li class="NavLink" id="home"> <a href="/">Home</a></li>
+        <li class="NavLink" id="games"> <a href="#">Games</a></li>
+        <li class="NavLink" id="studio"> <a href="#">Our Studio</a></li>
+        <li class="NavLink" id="services"> <a href="#">Services</a></li>
+        <li class="NavLink" id="contact"> <a href="/Contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- <button class="BuyButton">
+
+    <span>Buy Now</span>
+
+  </button> -->
+   
+</header>
+
+
+  <section class="container">
+  
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://drive.google.com/uc?export=download&id=1egeRX5jWlN4Xv7P-Rot6SFIEoz-BwKfM"" >
+      <!-- <div class="text">LATEST LOUNCHED</div> -->
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://drive.google.com/uc?export=download&id=1QwNi98m2GzjJE26Bt-43yieyPitugd1g">
+      <!-- <div class="text">LATEST LOUNCHED</div> -->
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://drive.google.com/uc?export=download&id=1S3NNbmph7XbYDKzBS-iX9fjzsmGzXfSX" >
+      <!-- <div class="text">LATEST LOUNCHED</div> -->
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  
+  <div class="middle1">
+
+    <div class="left1">
+
+     <!-- <div class="text1"  >WElcome to warpan Games</div> -->
+     <div class="text2" >Transforming <span style="color: blueviolet;">Visions</span> into Virtual Realities</div>
+      <div class="text3"  data-aos="zoom-in">We entertain billions of users with our games. Our mission to entertain the world goes beyond gaming. </div>
+<div class="bottom">
+  <div class="part1"  data-aos="zoom-in">
+   <div class="sub1">50 M+</div>
+   <div class="line1">Downloads, or 1% of World’s population</div>
+  </div>
+  <div class="part2"  data-aos="zoom-in">
+    <div class="sub2">1 Lakh+</div>
+   <div class="line2">Daily Active Users</div>
+  </div>
+  <div class="part3"  data-aos="zoom-in">
+    <div class="sub3">16+</div>
+   <div class="line3">Experts Collaborating at one place</div>
+  </div>
+  <div class="part4"  data-aos="zoom-in">
+    <div class="sub4">24+</div>
+   <div class="line4">Games Launched Till now</div>
+  </div>
+</div>
+
+    </div>
+
+    <div class="right1"  data-aos="zoom-in">
+      <div class="right-box">
+      <img src="/@1im3g.png" alt="">
+</div>
+</div>
+</div>
+<div class="middle2">
+
+  <div class="middle2-text1">
+      <h4>We Shape <span style="color: blueviolet;">Ideas</span> into Interactive Experiences</h4>
+  </div>
+  <div class="middle2-text2">
+      <h3> We are a passionate team of game developers dedicated to turning your creative visions into captivating interactive experiences.</h3>
+  </div>
+  <div class="middle2-text3">
+      <p> At our core, we're craftsmen of virtual realms, meticulously detailing each element to transform mere ideas into dynamic interactive experiences. We specialize in forging immersive narratives and captivating gameplay.</p>
+  </div>
+</div>
+<span class="Home-Catagory">Windows</span>
+<div class="window-scroll">
+  <div id="window"  class="game">
+    
+    <% for(let game of games1){ %>
+      <% if (game) { %>
+    <div class="game-container" data-aos="zoom-in">
+      <div class="game-container1">
+        <div class="game-img">
+          <img src=<%= game.img %> alt="">
+        </div>
+       
+      </div>
+      <div class="game-small">
+        <img src=<%= game.mini_gameCardImg %> alt="">
+      </div>
+      <div class="title"><%= game.title %></div>
+      <div class="catagory"> <% game.catagory.forEach(function(element) { %>
+        <span><%= element %></span>
+      <% }); %></div>
+      <span class="mini-discription"> <p><%= game.mini_discription %> </p><li><a href="/<%= game._id %>">more...</a></li> </span>
+      <button class="view-button" onclick="window.location.href='/<%= game._id %>'">View</button>
+    </div>
+    <% } %>
+    <% } %>
+   
+  </div>
+</div>
+
+<div class="more" id="mylink1"><a href="#">more</a></div>
+
+  <span class="Home-Catagory">Android</span>
+  <div class="android-scroll">
+  <div id="android"  class="game">
+    
+    <% for(let game of games2){ %>
+      <% if (game) { %>
+    <div class="game-container" data-aos="zoom-in">
+      <div class="game-container1">
+        <div class="game-img">
+          <img src=<%= game.img %> alt="">
+        </div>
+       
+      </div>
+      <div class="game-small">
+        <img src=<%= game.mini_gameCardImg %> alt="">
+      </div>
+      <div class="title"><%= game.title %></div>
+      <div class="catagory">FPG PlatFormer Adventure</div>
+      <div class="mini-discription"> <p><%= game.mini_discription %> </p><li><a href="/<%= game._id %>">more...</a></li> </div>
+      <button class="view-button" onclick="window.location.href='/<%= game._id %>'">View</button>
+    </div>
+    <% } %>
+    <% } %>
+    
+  </div>
+</div>
+<div class="more" id="mylink2"><a href="#">more</a></div>>
+
+  <span class="Home-Catagory">IOS</span>
+  <div class="ios-scroll">
+  <div id="IOS"  class="game">
+    
+    <% for(let game of games3){ %>
+      <% if (game) { %>
+    <div class="game-container" data-aos="zoom-in">
+      <div class="game-container1">
+        <div class="game-img">
+          <img src=<%= game.img %> alt="">
+        </div>
+       
+      </div>
+    
+      <div class="game-small">
+        <img src=<%= game.mini_gameCardImg %> alt="">
+      </div>
+      <div class="title"><%= game.title %></div>
+      <div class="catagory">FPG PlatFormer Adventure</div>
+
+      <span class="mini-discription"> <p><%= game.mini_discription %> </p><li><a href='/<%= game._id %>'>more...</a></li> </span>
+
+      <span class="mini-discription"> <p><%= game.mini_discription %> </p><li><a href="/<%= game._id %>">more...</a></li> </span>
+
+      <button class="view-button" onclick="window.location.href='/<%= game._id %>'">View</button>
+    </div>
+    <% } %>
+    <% } %>
+   
+  </div>
+</div>
+<div class="more" id="mylink3"><a href="#">more</a></div>
+
+<div class="middle2">
+
+  <div class="middle2-text1">
+      <h4>Unleashing <span style="color: blueviolet;">Dreams</span> through Expert Hands</h4>
+  </div>
+  <div class="middle2-text2">
+     <h3>Passion Fuels Our Craft, Expertise Unites Our Team: We Create Gaming Wonders Together.</h3>
+  </div>
+  <div class="middle2-text3">
+      <p>At our studio, we're more than a team – we're a tightly-knit family of creators. Through seamless collaboration, our diverse talents converge to craft extraordinary games. Each member weaves their expertise into the tapestry of our projects, breathing life into immersive worlds that captivate players worldwide.</p>
+  </div>
+
+  <div class="profile-container">
+    <div class="profile-box">
+  
+      <div class="profile-img">
+          <img src="/CEO.png" alt="not found">
+      </div>
+      <div class="devloper-name"><h3>Vikram Singh Panwar</h3></div>
+      <div class="position">Founder</div>
+      <div class="social-icon">
+          <ul>
+            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa fa-envelope"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+      </div>
+          </div>
+          <div class="profile-box">
+  
+            <div class="profile-img">
+                <img src="/CTO.png" alt="">
+            </div>
+            <div class="devloper-name"><h3>Omprakash</h3></div>
+            <div class="position">Lead Devloper</div>
+            <div class="social-icon">
+                <ul>
+                  <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                  <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fa fa-envelope"></i></a></li>
+                  <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+                </div>
+  
+                <div class="profile-box">
+  
+                  <div class="profile-img">
+                      <img src="/Manager.png" alt="">
+                  </div>
+                  <div class="devloper-name"><h3>Lokesh Kumar</h3></div>
+                  <div class="position">Manager</div>
+                  <div class="social-icon">
+                      <ul>
+                          <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                          <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                          <li><a href=""><i class="fa fa-envelope"></i></a></li>
+                          <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                  </div>
+                </div>
+  
+  </div>
+</div>
+
+
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+    <div class="footer-heading">Let`s Get Started</div>
+
+<div class="upper">
+
+<div class="about-company"><h3>Warpan Games</h3>
+<p>At our cutting-edge studio, we're not just game developers – we're architects of innovation. Armed with the latest technologies, we breathe life into captivating games that transcend entertainment. But we don't stop there. We harness the power of gaming to drive business expansion, crafting software solutions that empower growth and transform industries. Our multidisciplinary approach merges creativity and technology, shaping immersive experiences and driving strategic success for our partners.</p>
+</div>
+<div class="form">
+<div class="input-section">
+<input type="email" class="input-field" placeholder="Your Email"/>
+<button class="input-button">Subscribe</button>
+</div>
+</div>
+</div>
+
+
+<div class="contact">
+
+  <div class="office">
+  <div class="contact-heading">Office</div>
+  <div class="sub">Warpan</div>
+  <div class="sub">Jaipur, Rajasthan 302017</div>
+  <div class="sub">India</div>
+  
+  </div>
+  <div class="email">
+  
+  <div class="contact-heading">Email Address</div>
+  <div class="sub">info.warpan@gmail.com</div>
+  <div class="sub">warpangames@gmail.com</div></div>
+  
+  <div class="phone">
+  
+  <div class="contact-heading">Phone Number</div>
+  <div class="sub">+91 9460866337</div>
+  <div class="sub">+91 9461855615</div>
+  
+</div>
+<div class="working-time">
+
+<div class="contact-heading">Office</div>
+<div class="sub">Mon-Fri 09:00 - 17:00</div>
+<div class="sub">Sat-Sun Weekend</div>
+
+</div>
+</div>
+<div class="social-menu">
+  <ul>
+    <li><a href="https://www.facebook.com/profile.php?id=61552544006457" target=”_blank”><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://www.instagram.com/warpangames/" target=”_blank”><i class="fa fa-instagram"></i></a></li>
+   
+    <li><a href="https://www.linkedin.com/company/warpan-games/" target=”_blank”><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://www.youtube.com/@warpangames" target=”_blank”><i class="fa fa-youtube"></i></a></li>
+</ul>
+</div>
+
+</div>
+
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="home.js"></script>
+
+
+</body>
+</html>

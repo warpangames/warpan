@@ -14,6 +14,7 @@
       xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE) {
           if (xhr.status === 200) {
+            console.log(xhr.responseText);
             const dataContainer = document.getElementById("game123");
             dataContainer.innerHTML = xhr.responseText;
           } else {
@@ -23,6 +24,18 @@
       };
       // Replace 'http://localhost:3000' with your backend server URL
       xhr.open('GET', `/Games/filter?catagory=${filter}`, true);
+      xhr.onload = function () {
+        if (xhr.status >= 200 && xhr.status < 300) {
+            // Process the response data
+        } else {
+            console.error('Request failed with status: ' + xhr.status);
+            console.error(xhr.responseText);
+        }
+    };
+    
+    xhr.onerror = function () {
+        console.error('Request failed. Check network and server settings.');
+    };
       xhr.send();
     }
 

@@ -48,10 +48,11 @@ document.getElementById('mylink2').addEventListener('click', function() {
         window.location.href = '/Games'; // Redirect to the second page
     });
 
-    document.getElementById('games').addEventListener('click', function() {
-      sessionStorage.setItem('key', 'All');
-        window.location.href = '/Games'; // Redirect to the second page
-    });
+    //game load problem solution this select the category in games automattically
+     document.getElementById('games').addEventListener('click', function() {
+       sessionStorage.setItem('key', 'All');
+         window.location.href = '/Games'; // Redirect to the second page
+     });
 
 
     

@@ -55,6 +55,8 @@
     console.log(keyValue); // This should print "IOS" if the data was set correctly
 });
 
+
+
 $(document).ready(function() {
   // Get the current route from your application (e.g., "/page1", "/page2", etc.)
   var currentRoute = "/Games"; // Replace this with your actual current route logic

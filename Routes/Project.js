@@ -11,5 +11,4 @@ ProjectRouter
 .get('/Games/filter',ProjectController.getfilterdata)
 .get('/sitemap.xml',ProjectController.getsitemap)
 .get('/robots.txt',ProjectController.getrobotstxt);
-
 exports.ProjectRouter = ProjectRouter;

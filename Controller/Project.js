@@ -13,6 +13,8 @@ exports.getHomePage=async (req,res)=>{
     });
 }
 
+
+
 exports.getGamesPage=async (req,res)=>{
     const games = await  gamesResult.find();
     ejs.renderFile(path.resolve(__dirname, '../View/GamePage.ejs'), {games:games},function(err, str){

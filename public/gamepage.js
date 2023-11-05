@@ -49,11 +49,12 @@
       });
     });
   // });
-  document.addEventListener('DOMContentLoaded', function() {
-    const keyValue = sessionStorage.getItem('key');
-    fetchData(keyValue);
-    console.log(keyValue); // This should print "IOS" if the data was set correctly
+ document.addEventListener('DOMContentLoaded', function() {
+   const keyValue = sessionStorage.getItem('key');
+   fetchData(keyValue);
+   console.log(keyValue); // This should print "IOS" if the data was set correctly
 });
+
 
 
 

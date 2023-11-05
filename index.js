@@ -2,6 +2,8 @@ const express = require('express');
 const path  = require('path');
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
+const cors = require('cors'); // Import the 'cors' middleware
+
 const App = express();
 const router = require('./Routes/Project');
 
@@ -16,6 +18,7 @@ App.use('/',router.ProjectRouter);
 App.use(express.json());
 App.use(bodyparser.urlencoded({extended: 'true'}));
 
+App.use(cors());
 
 
 const PORT = process.env.port || 5000;

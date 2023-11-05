@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warpan Games</title>
+    <title>Warpan</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -49,19 +49,17 @@
   
   <div class="slideshow-container">
     <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
+      <!--<div class="numbertext">1 / 3</div> -->
       <img src="https://drive.google.com/uc?export=download&id=1egeRX5jWlN4Xv7P-Rot6SFIEoz-BwKfM" >
       <!-- <div class="text">LATEST LOUNCHED</div> -->
     </div>
   
     <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
       <img src="https://drive.google.com/uc?export=download&id=1QwNi98m2GzjJE26Bt-43yieyPitugd1g">
       <!-- <div class="text">LATEST LOUNCHED</div> -->
     </div>
   
     <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
       <img src="https://drive.google.com/uc?export=download&id=1S3NNbmph7XbYDKzBS-iX9fjzsmGzXfSX" >
       <!-- <div class="text">LATEST LOUNCHED</div> -->
     </div>
@@ -81,8 +79,8 @@
 
     <div class="left1">
 
-     <!-- <div class="text1"  >WElcome to warpan Games</div> -->
-     <div class="text2" >Transforming <span style="color: blueviolet;">Visions</span> into Virtual Realities</div>
+     <div class="text1"  >Welcome to <span style="color: #8200ff;">Warpan</span> Games</div>
+     <div class="text2" >Transforming <span style="color: 8200ff;">Visions</span> into Virtual Realities</div>
       <div class="text3"  data-aos="zoom-in">We entertain billions of users with our games. Our mission to entertain the world goes beyond gaming. </div>
 <div class="bottom">
   <div class="part1"  data-aos="zoom-in">
@@ -111,10 +109,11 @@
 </div>
 </div>
 </div>
+
 <div class="middle2">
 
   <div class="middle2-text1">
-      <h4>We Shape <span style="color: blueviolet;">Ideas</span> into Interactive Experiences</h4>
+      <h4>We Shape <span style="color: 8200ff;">Ideas</span> into Interactive Experiences</h4>
   </div>
   <div class="middle2-text2">
       <h3> We are a passionate team of game developers dedicated to turning your creative visions into captivating interactive experiences.</h3>
@@ -123,6 +122,12 @@
       <p> At our core, we're craftsmen of virtual realms, meticulously detailing each element to transform mere ideas into dynamic interactive experiences. We specialize in forging immersive narratives and captivating gameplay.</p>
   </div>
 </div>
+<div style="position: relative;">
+  <div class="angled-rect"></div>
+  <div class="angled-rect-l"></div>
+  <div class="design1"></div>
+  <div class="design2"></div>
+
 <span class="Home-Catagory">Windows</span>
 <div class="window-scroll">
   <div id="window"  class="game">
@@ -131,10 +136,21 @@
       <% if (game) { %>
     <div class="game-container" data-aos="zoom-in">
       <div class="game-container1">
+        <div class="game-container1-rating">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" viewBox="0 0 40 50" fill="none">
+            <path d="M40 0V50L20 40L0 50V0H40Z" fill="#00FF00"/>
+          </svg>
+          <p style="position: absolute; top: 30%; left:20%; font-size: 24; font-weight: 600;">4.7</p>
+
+      </div>
         <div class="game-img">
           <img src=<%= game.img %> alt="">
         </div>
-       
+        <div class="game-container-sub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="301" height="257" viewBox="0 0 301 257" fill="none">
+            <path class="pathc" d="M0 70.5L301 0.5V251.5C301 254.261 298.761 256.5 296 256.5H4.99999C2.23857 256.5 0 254.261 0 251.5V70.5Z" fill="#3B3E4B"/>
+          </svg>
+        </div>
       </div>
       <div class="game-small">
         <img src=<%= game.mini_gameCardImg %> alt="">
@@ -148,11 +164,12 @@
     </div>
     <% } %>
     <% } %>
-   
+    <div class="more" id="mylink1"><a href="#" target=”_blank”><i class="fa fa-angle-right"></i></a></div>
+    
   </div>
+
 </div>
 
-<div class="more" id="mylink1"><a href="#">more</a></div>
 
   <span class="Home-Catagory">Android</span>
   <div class="android-scroll">
@@ -162,10 +179,21 @@
       <% if (game) { %>
     <div class="game-container" data-aos="zoom-in">
       <div class="game-container1">
+        <div class="game-container1-rating">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" viewBox="0 0 40 50" fill="none">
+          <path d="M40 0V50L20 40L0 50V0H40Z" fill="#00FF00"/>
+        </svg>
+        <p style="position: absolute; top: 10%; left:20%;">4.7</p>
+
+      </div>
         <div class="game-img">
           <img src=<%= game.img %> alt="">
         </div>
-       
+        <div class="game-container-sub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="301" height="257" viewBox="0 0 301 257" fill="none">
+            <path class="pathc" d="M0 70.5L301 0.5V251.5C301 254.261 298.761 256.5 296 256.5H4.99999C2.23857 256.5 0 254.261 0 251.5V70.5Z" fill="#3B3E4B"/>
+          </svg>
+        </div>
       </div>
       <div class="game-small">
         <img src=<%= game.mini_gameCardImg %> alt="">
@@ -177,10 +205,10 @@
     </div>
     <% } %>
     <% } %>
-    
+    <div class="more" id="mylink2"><a href="#" target=”_blank”><i class="fa fa-angle-right"></i></a></div>
+
   </div>
 </div>
-<div class="more" id="mylink2"><a href="#">more</a></div>>
 
   <span class="Home-Catagory">IOS</span>
   <div class="ios-scroll">
@@ -190,10 +218,21 @@
       <% if (game) { %>
     <div class="game-container" data-aos="zoom-in">
       <div class="game-container1">
+        <div class="game-container1-rating">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" viewBox="0 0 40 50" fill="none">
+          <path d="M40 0V50L20 40L0 50V0H40Z" fill="#00FF00"/>
+        </svg>
+        <p style="position: absolute; top: 10%; left:20%;">4.7</p>
+
+      </div>
         <div class="game-img">
           <img src=<%= game.img %> alt="">
         </div>
-       
+        <div class="game-container-sub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="301" height="257" viewBox="0 0 301 257" fill="none">
+            <path class="pathc" d="M0 70.5L301 0.5V251.5C301 254.261 298.761 256.5 296 256.5H4.99999C2.23857 256.5 0 254.261 0 251.5V70.5Z" fill="#3B3E4B"/>
+          </svg>
+        </div>
       </div>
     
       <div class="game-small">
@@ -210,20 +249,24 @@
     </div>
     <% } %>
     <% } %>
-   
+    <div class="more" id="mylink3"><a href="#" target=”_blank”><i class="fa fa-angle-right"></i></a></div>
+
   </div>
 </div>
-<div class="more" id="mylink3"><a href="#">more</a></div>
+</div>
 
-<div class="middle2">
+<div class="middle3">
+  <div class="design3"></div>
+  <div class="design4"></div>
+  <div class="design5"></div>
 
-  <div class="middle2-text1">
-      <h4>Unleashing <span style="color: blueviolet;">Dreams</span> through Expert Hands</h4>
+  <div class="middle2-text1" style="position: relative;">
+      <h4>Unleashing <span style="color: 8200ff;">Dreams</span> through Expert Hands</h4>
   </div>
-  <div class="middle2-text2">
+  <div class="middle2-text2" style="position: relative;">
      <h3>Passion Fuels Our Craft, Expertise Unites Our Team: We Create Gaming Wonders Together.</h3>
   </div>
-  <div class="middle2-text3">
+  <div class="middle2-text3" style="position: relative;">
       <p>At our studio, we're more than a team – we're a tightly-knit family of creators. Through seamless collaboration, our diverse talents converge to craft extraordinary games. Each member weaves their expertise into the tapestry of our projects, breathing life into immersive worlds that captivate players worldwide.</p>
   </div>
 
@@ -233,8 +276,8 @@
       <div class="profile-img">
           <img src="/CEO.png" alt="not found">
       </div>
-      <div class="devloper-name"><h3>Vikram Singh Panwar</h3></div>
-      <div class="position">Founder</div>
+      <div class="devloper-name"><h3>Narendra Rathore</h3></div>
+      <div class="position">Lead Developer</div>
       <div class="social-icon">
           <ul>
             <li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -246,11 +289,11 @@
           </div>
           <div class="profile-box">
   
-            <div class="profile-img" style="background-image: linear-gradient(32deg, #f1d371, #a4f171);">
+            <div class="profile-img">
                 <img src="/CTO.png" alt="">
             </div>
-            <div class="devloper-name"><h3>Omprakash</h3></div>
-            <div class="position">Lead Devloper</div>
+            <div class="devloper-name"><h3>Ankit Yadav</h3></div>
+            <div class="position">Unity Developer</div>
             <div class="social-icon">
                 <ul>
                   <li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -263,7 +306,7 @@
   
                 <div class="profile-box">
   
-                  <div class="profile-img" style="background-image: linear-gradient(32deg, #a4f171, #71f1d7);">
+                  <div class="profile-img">
                       <img src="/Manager.png" alt="">
                   </div>
                   <div class="devloper-name"><h3>Lokesh Kumar</h3></div>
@@ -296,7 +339,7 @@
                 <div>  <p class="footer-content-1up">Let's Get <span style="color: #8200ff;">Started</span></p>
                 </div>
 
-                <div><p style="font-size: 25px; color: white; padding: 10px;"><span style="color: #8200ff;  font-weight: bold; ">Warpan</span> Games
+                <div><p class="footer-heading"><span style="color: #8200ff;  font-weight: bold; ">Warpan</span> Games
                   At our cutting-edge studio, we're not just game developers – we're architects of innovation. Armed with the latest technologies, we breathe life into captivating games that transcend entertainment.
                 </p></div>
 
@@ -357,7 +400,7 @@
                 <div  style="right: 0; display: flex; align-items: center;"><a href="google.com" class="footer-privacy-policy">Privacy Policy</a></div>
             </div>
     </div>
-<div><a href="/driftt/index.html">driftt</a></div>
+    
 </footer>
 
 

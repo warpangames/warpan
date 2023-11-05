@@ -11,8 +11,20 @@
         <% if (game) { %>
           <div class="game-container" data-aos="zoom-in">
             <div class="game-container1">
+              <div class="game-container1-rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" viewBox="0 0 40 50" fill="none">
+                <path d="M40 0V50L20 40L0 50V0H40Z" fill="#00FF00"/>
+              </svg>
+              <p style="position: absolute; top: 30%; left:20%; font-size: 20; font-size: 24; font-weight: 600;">4.7</p>
+      
+            </div>
               <div class="game-img">
                 <img src=<%= game.img %> alt="">
+              </div>
+              <div class="game-container-sub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="301" height="257" viewBox="0 0 301 257" fill="none">
+                  <path d="M0 70.5L301 0.5V251.5C301 254.261 298.761 256.5 296 256.5H4.99999C2.23857 256.5 0 254.261 0 251.5V70.5Z" fill="#3B3E4B"/>
+                </svg>
               </div>
              
             </div>

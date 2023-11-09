@@ -1532,6 +1532,14 @@ display: block;
   font-weight: 700;
 }
 
+.footer-terms-conditions{
+  color: #8200ff; 
+  right: 100px; 
+  padding-right: 30px; 
+  position: absolute; 
+  font-size: 15px;
+  font-weight: 700;
+}
 .footer-year{
   padding-left: 30px; 
   color: white; 
